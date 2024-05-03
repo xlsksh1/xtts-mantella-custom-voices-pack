@@ -3,7 +3,8 @@
 This is a repository containing `latent_speaker` JSON files of trained voiced data. The main purpose is to have a repository full of custom voices for Skyrim or Fallout4, and have it synced with a build that can be XTTS Mantella server that can be deployed in the cloud.
 
 ## Usage Locally
-- 
+
+Simply copy all the files from the `latent_speaker_folder` into your xtts-mantella folder `latent_speaker_folder` and start the xtts server.
 
 ## Usage Cloud
 
@@ -28,7 +29,8 @@ If you wish to run this somewhere else, you can just grab the latest Docker buil
 ## Reference
 
 Mantella: https://art-from-the-machine.github.io/Mantella
-  - Repo: 
+  - Repo: https://github.com/art-from-the-machine/Mantella
+  
 XTTS Mantella API Server: https://www.nexusmods.com/skyrimspecialedition/mods/113445
   - Repo: https://github.com/Haurrus/xtts-api-server-mantella/tree/local_mantella_api
   - Note the build will grab the latest XTTS Mantella API Server docker build, which contains voices for the original SKyrim and Fallout games. If you wish to edit those orginal files, refer there.
