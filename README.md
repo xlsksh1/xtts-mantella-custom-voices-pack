@@ -28,6 +28,34 @@ For more information, refer to Mantella XTTS docs: https://art-from-the-machine.
 
 If you wish to run this somewhere else, you can just grab the latest Docker build: `docker pull koukidevdocks/xtts-mantella-custom-voices-pack:main`.
 
+## List of Custom NPCs
+
+Below is a list of NPCS. If you do contribute to the latent_speaker, please be sure to add the NPC here as well for documentation.
+
+### Skyrim
+
+- Sofia: https://www.nexusmods.com/skyrimspecialedition/mods/2180
+- Recorder: https://www.nexusmods.com/skyrimspecialedition/mods/4718
+- Lydia (Improved Follower Dialogue): https://www.nexusmods.com/skyrimspecialedition/mods/38473
+
+## Training your own Custom NPCs
+
+Training your own custom NPCs is really easy, its actually one of the biggest selling points of `XTTS`. 
+
+I'll be using Skyrim to explain. These are the instructions for the current Mantella and XTTS-Mantella-Server version as of time of writting. 
+
+1. Find the NPC files of the NPC you want to target, you will need the in-game name of the NPC and its voice `.wav` sound voice files for training. Loose files will have these `.wav` files under `{Mod File}\Sound\Voice\{Mod}.esp\{npc_voicetype}\`. If your NPC is bundled within a `.bsa` file, use [BAE](https://www.nexusmods.com/skyrimspecialedition/mods/974/) to extract them to loose files.
+2. Download and install [XTTS Mantella API Server](https://www.nexusmods.com/skyrimspecialedition/mods/113445). Make sure to also download the `gradio mantella request test` files which you will use in step 4. 
+3. Within the XTTS mantella root folder, you will need to create a `speakers\{lang}\{npc_name}` folder, where `{lang}` is the target language of your file and `{npc_name}` is your NPC name. Carefully select your `.wav` files and place them in this folder. If you are lazy just put all `.wav` of your NPC in this folder.
+   - i.e `speakers\en\sofia` will contain all of the chosen sofia `.wav` files. 
+   - Warning: You want the `npc_name` and NOT the voicetype, since Mantella currently uses the NPC name when calling XTTS. 
+4. Generate and Test your voice by running the following from the xtts server root folder: `.\gradio_xtts_mantella_request.exe --text {text} --language {lang} --speaker_wav {npc_name}`. An `output` .wav file is generated which contains the text you are testing. This command will also generate the trained latent speaker JSON file under `latent_speaker_folder\{lang}\{npc_name}.json`.
+  - Ex: `.\gradio_xtts_mantella_request.exe --text "Hello There Dragonborn, where shall we go tonight? Where ever it is, I just want some ale." --language en --speaker_wav sofia`
+  - Note: You don't really need to run this since just running the xtts server itself will generate them.
+5. If you are not happy with the generated sample voice, you may delete the generated `latent_speaker_folder` JSON file. Repeats steps 3-5 until you are happy with your voice samples.
+6. IMPORTANT!! Make sure to test your files locally using a local XTTS within your game. Boot up skyrim and find your NPC, then talk to them using Mantella spell. 
+7. If everything is fine, you may then finally push you `json` latent files to this repository. Create a pull-request with these files. The file is what was generated in step 4, `latent_speaker_folder\{lang}\{npc_name}.json`.
+
 ## Reference
 
 Mantella: https://art-from-the-machine.github.io/Mantella
