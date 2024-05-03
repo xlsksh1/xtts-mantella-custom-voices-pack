@@ -60,7 +60,9 @@ I'll be using Skyrim to explain. These are the instructions for the current Mant
 8. IMPORTANT!! Make sure to test your files locally using a local XTTS within your game. Boot up skyrim and find your NPC, then talk to them using the Mantella spell. 
 9. If everything is fine, you may then finally push your `json` latent files to this repository. Create a pull-request with these files. The file is what was generated in step 5, `latent_speaker_folder\{lang}\{npc_voice_name}.json`.
 
-| Note 1: If your NPC is not inside of `data\skyrim\skyrim_characters.csv`, talk with the Mantella community to get this NPC added to the `csv`. However, feel free to add your own `.csv` file and if you push your trained JSON to this repo, add a note in this README under `List of Custom NPCs` with instructions. When the `.csv` gets updated with your NPC, remove those instructions.
+###### Notes
+
+| Note: If your NPC is not inside of `data\skyrim\skyrim_characters.csv`, talk with the Mantella community to get this NPC added to the `csv`. However, feel free to add your own `.csv` file and if you push your trained JSON to this repo, add a note in this README under `List of Custom NPCs` with instructions. When the `.csv` gets updated with your NPC, remove those instructions.
 
 ## Reference
 
