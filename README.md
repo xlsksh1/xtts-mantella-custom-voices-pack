@@ -38,6 +38,9 @@ Below is a list of NPCS. If you do contribute to the latent_speaker, please be s
 - Recorder: https://www.nexusmods.com/skyrimspecialedition/mods/4718
 - Lydia (Improved Follower Dialogue): https://www.nexusmods.com/skyrimspecialedition/mods/38473
 
+#### Skyrim NOTES
+- For Lydia Improved Follower Dialogue, rename the `voice_model` column to `lydia` within your `data\skyrim\skyrim_characters.csv` folder. 
+
 ## Training your own Custom NPCs
 
 Training your own custom NPCs is really easy, its actually one of the biggest selling points of `XTTS`. 
