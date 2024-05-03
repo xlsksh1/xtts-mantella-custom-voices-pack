@@ -45,7 +45,7 @@ Below is a list of NPCS. If you do contribute to the latent_speaker, please be s
 
 Training your own custom NPCs is really easy, its actually one of the biggest selling points of `XTTS`. 
 
-I'll be using Skyrim to explain. These are the instructions for the current Mantella and XTTS-Mantella-Server version as of time of writting. 
+We'll be using Skyrim to explain. These are the instructions for the current Mantella and XTTS-Mantella-Server version as of time of writting. 
 
 1. Find the NPC files of the NPC you want to target, you will need the in-game name of the NPC and its voice `.wav` sound voice files for training. Loose files will have these `.wav` files under `{Mod File}\Sound\Voice\{Mod}.esp\{npc_voicetype}\` in the form of `.fuz` files that must be converted to `.wav`. If your NPC is bundled within a `.bsa` file, use [BAE](https://www.nexusmods.com/skyrimspecialedition/mods/974/) to extract them to loose files.
 2. Download and install [XTTS Mantella API Server](https://www.nexusmods.com/skyrimspecialedition/mods/113445). Make sure to also download the `gradio mantella request test` files which you will use in step 6, and place it inside this XTTS server's folder too.
@@ -62,7 +62,7 @@ I'll be using Skyrim to explain. These are the instructions for the current Mant
 
 ###### Notes
 
-| Note: If your NPC is not inside of `data\skyrim\skyrim_characters.csv`, talk with the Mantella community to get this NPC added to the `csv`. However, feel free to add your own `.csv` file and if you push your trained JSON to this repo, add a note in this README under `List of Custom NPCs` with instructions. When the `.csv` gets updated with your NPC, remove those instructions.
+| Note: If your NPC is not inside of `data\skyrim\skyrim_characters.csv`, talk with the Mantella community to get this NPC added to the `csv`. However, feel free to add your own row to this `skyrim_characters.csv` file and if you push your trained JSON to this repo, add a note in this README under `List of Custom NPCs` with instructions. When the `.csv` gets updated with your NPC, remove those instructions.
 
 ## Reference
 
