@@ -20,6 +20,8 @@ Click the following URL to setup a new runpod.io pod. It will setup the XTTS Man
 
 - [runpod template](https://runpod.io/console/deploy?template=kv0kqgd8oi&ref=u2snoorq)
 
+It is more than enough to simply choose the cheapest option, as of date a 3070, on community cloud.
+
 For more information, refer to Mantella XTTS docs: https://art-from-the-machine.github.io/Mantella/pages/installation.html#text-to-speech
 
 ### Running else where 
