@@ -1,6 +1,6 @@
 ## XTTS Mantella Custom Voices Pack
 
-This is a repository containing `latent_speaker` JSON files of trained voiced data. The main purpose is to have a repository full of custom voices for Skyrim or Fallout4, and have it synced with a build that can be XTTS Mantella server that can be deployed in the cloud.
+This is a repository containing `latent_speaker` JSON files of trained voiced data. The main purpose is to have a repository full of custom voices for Skyrim or Fallout4, and have this repo always be in sync with a build that can be deployed in the cloud as a XTTS Mantella server.
 
 ## Usage Locally
 
@@ -8,9 +8,9 @@ Simply copy all the files from the `latent_speaker_folder` into your xtts-mantel
 
 ## Usage Cloud
 
-Anytime a new file is added or updated within the `latent_speaker_folder` a new build will be made. The latest build will always be used when deploying a `xtts-mantella-custom-voices-pack` build in the cloud. 
+Anytime a new file is added or updated within the `latent_speaker_folder` a new build will be made automatically. The latest build will always be used when deploying a `xtts-mantella-custom-voices-pack` build in the cloud. 
 
-This means if you wish to run your own custom voices in a cloud server, all you have to do is test your custom voice files in game and then add your generated `latent_speaker` json to this repository. After a few minutes the new build is made, so just create a new runpod.io pod or an instance of whatever service you use.
+This means if you wish to run your own custom voices in a cloud server, all you have to do is test your custom voice files in game and then add your generated `latent_speaker` json to this repository. After a few minutes, the new build will be made so just create a new runpod.io pod or an instance of whatever service you use.
 
 Feel free to make pull request with your trained files, or if you are a contributor then directly push your files to main whenever.
 
