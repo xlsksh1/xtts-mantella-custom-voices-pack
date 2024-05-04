@@ -37,6 +37,16 @@ Below is a list of NPCS. If you do contribute to the latent_speaker, please be s
 - Sofia: https://www.nexusmods.com/skyrimspecialedition/mods/2180
 - Recorder: https://www.nexusmods.com/skyrimspecialedition/mods/4718
 - Lydia (Improved Follower Dialogue): https://www.nexusmods.com/skyrimspecialedition/mods/38473
+- Al'Hassan (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Amalee (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Amras (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Anum-La The Swamp Knight (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Arelthor (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Arghus (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Gorr (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Jade (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Tikrid (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
+- Zora Fair-Child (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
 
 #### Skyrim NOTES
 - For Lydia Improved Follower Dialogue, rename the `voice_model` column to `lydia` within your `data\skyrim\skyrim_characters.csv` folder. 
