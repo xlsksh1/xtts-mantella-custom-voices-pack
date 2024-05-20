@@ -28,6 +28,8 @@ For more information, refer to Mantella XTTS docs: https://art-from-the-machine.
 
 If you wish to run this somewhere else, you can just grab the latest Docker build: `docker pull koukidevdocks/xtts-mantella-custom-voices-pack:main`.
 
+On run, you may do `docker run --gpus=all -p 8020:8020 koukidevdocks/xtts-mantella-custom-voices-pack:main`.
+
 ## List of Custom NPCs
 
 Below is a list of NPCS. If you do contribute to the latent_speaker, please be sure to add the NPC here as well for documentation.
@@ -37,6 +39,7 @@ Below is a list of NPCS. If you do contribute to the latent_speaker, please be s
 - Sofia: https://www.nexusmods.com/skyrimspecialedition/mods/2180
 - Recorder: https://www.nexusmods.com/skyrimspecialedition/mods/4718
 - Lydia (Improved Follower Dialogue): https://www.nexusmods.com/skyrimspecialedition/mods/38473
+- Morgaine - https://www.nexusmods.com/skyrimspecialedition/mods/41027
 - Al'Hassan (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
 - Amalee (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
 - Amras (Interesting NCPs): https://www.nexusmods.com/skyrimspecialedition/mods/29194
@@ -50,6 +53,7 @@ Below is a list of NPCS. If you do contribute to the latent_speaker, please be s
 
 #### Skyrim NOTES
 - For Lydia Improved Follower Dialogue, rename the `voice_model` column to `lydia` within your `data\skyrim\skyrim_characters.csv` folder. 
+- For Morgaine, add her to `data\skyrim\skyrim_characters.csv` folder with the `voice_model` column as `morgaine`. 
 
 ## Training your own Custom NPCs
 
@@ -59,7 +63,7 @@ We'll be using Skyrim to explain. These are the instructions for the current Man
 
 1. Find the NPC files of the NPC you want to target, you will need the in-game name of the NPC and its voice `.wav` sound voice files for training. Loose files will have these `.wav` files under `{Mod File}\Sound\Voice\{Mod}.esp\{npc_voicetype}\` in the form of `.fuz` files that must be converted to `.wav`. If your NPC is bundled within a `.bsa` file, use [BAE](https://www.nexusmods.com/skyrimspecialedition/mods/974/) to extract them to loose files.
 2. Download and install [XTTS Mantella API Server](https://www.nexusmods.com/skyrimspecialedition/mods/113445). Make sure to also download the `gradio mantella request test` files which you will use in step 6, and place it inside this XTTS server's folder too.
-3. Prepare your `.wav` files by extracting them from your `.fuz` files. Use [Yakitori Audio Converter](https://www.nexusmods.com/skyrimspecialedition/mods/17765) to achieve this. Simple find the npc voice folder with all of the `.fuz` files, and batch convert them to `.wav`.
+3. Prepare your `.wav` files by extracting them from your `.fuz` files. Use [Yakitori Audio Converter](https://www.nexusmods.com/skyrimspecialedition/mods/17765) to achieve this. Simply find the npc voice folder with all of the `.fuz` files, and batch convert them to `.wav`.
 4. Within the XTTS mantella root folder, you will need to create a `speakers\{lang}\{npc_voice_name}` folder, where `{lang}` is the target language of your file and `{npc_voice_name}` is your NPC's `voice_model` as specified within Mantell `.csv`. Carefully select your `.wav` files and place them in this folder. If you are lazy just put all `.wav` of your NPC in this folder.
    - i.e `speakers\en\sofia` will contain all of the chosen sofia `.wav` files. 
    - IMPORTANT: You want the `npc_voice_name` to be the `voice_model` within Mantella's `data\skyrim\skyrim_characters.csv` folder and NOT the voicetype or voicetypefolder. This is what Mantella currently uses as the NPC name when calling XTTS. So be sure to look up which voice model to use by looking up your NPC's name in the CSV. 
