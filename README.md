@@ -80,6 +80,10 @@ We'll be using Skyrim to explain. These are the instructions for the current Man
 
 | Note: If your NPC is not inside of `data\skyrim\skyrim_characters.csv`, talk with the Mantella community to get this NPC added to the `csv`. However, feel free to add your own row to this `skyrim_characters.csv` file and if you push your trained JSON to this repo, add a note in this README under `List of Custom NPCs` with instructions. When the `.csv` gets updated with your NPC, remove those instructions.
 
+### Training Tips
+
+- For the best and most accurate results for a voice, manually go through `.wav` voice lines files that you will use for training. Only select about 10 files that are 5 to 10 seconds long that most represents the voice acting you are trying to capture. Try to use voice lines that have the same voice acting & tone you are capturing, but use different scenarios and words being spoken.
+
 ## Reference
 
 Mantella: https://art-from-the-machine.github.io/Mantella
