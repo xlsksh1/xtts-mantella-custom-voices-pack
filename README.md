@@ -1,6 +1,6 @@
 ## XTTS Mantella Custom Voices Pack
 
-This is a repository containing `latent_speaker` JSON files of trained voiced data. The main purpose is to have a repository full of custom voices for Skyrim or Fallout4, and have this repo always be in sync with a build that can be deployed in the cloud as a XTTS Mantella server.
+This is a repository containing `latent_speaker` JSON files of trained voiced data created by the community. The main purpose is to have a repository full of custom voices for Skyrim or Fallout4, and have this repo always be in sync with a build that can be deployed in the cloud as a XTTS Mantella server. See the `Training your own Custom NPCs` section to learn how to train, and feel free to share them in this repository. Contact community members in the Mantella [discord](https://discord.gg/Q4BJAdtGUE) to be added as a contributor to this repo, or create a fork pull request. 
 
 ## Usage Locally
 
